@@ -20,6 +20,7 @@ A cellular automaton is a model of a system of "cell" objects with following cha
  </li>
  <li>Hence, we calculate a new state by looking at all previous neighbouring state</li>
 </ul>
+
 ## Examples
 
  ### 1. [Rule 90](https://github.com/Surajpedd/Cellular-Automata/blob/main/Rule90.cpp)
