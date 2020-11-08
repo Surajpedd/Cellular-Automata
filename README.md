@@ -12,13 +12,14 @@ A cellular automaton is a model of a system of "cell" objects with following cha
 ## Working
 <ul>
  <li>An initial state (time t=0) is selected by assigning a state for each cell</li>
-<li>A new generation is created (advancing t by 1), according to some fixed rule that determines the new state of each cell in terms of:
-<ol>
-<li>The current state of the cell</li>
-<li>The states of the cells in its neighbourhood</li>
- </ol></li>
+ <li>A new generation is created (advancing t by 1), according to some fixed rule that determines the new state of each cell in terms of:
+     <ol>
+         <li>The current state of the cell</li>
+         <li>The states of the cells in its neighbourhood</li>
+     </ol>
+ </li>
  <li>Hence, we calculate a new state by looking at all previous neighbouring state</li>
-
+</ul>
 ## Examples
 
  ### 1. [Rule 90](https://github.com/Surajpedd/Cellular-Automata/blob/main/Rule90.cpp)
