@@ -8,7 +8,7 @@ vector <vector<int>> rules={{0,0,0},{0,0,1},{0,1,0},{0,1,1},{1,0,0},{1,0,1},{1,1
 void printRules()  //Utility Function to Print Rules 
 {
     int i,j;
-	cout << "The rules that define the Rule 90 Celluar Automata are as follows: \n";
+	cout << "The rules of Rule 90 Celluar Automata are as follows: \n";
 	for(i=0;i<8;i++)
 	{
 	    cout << "\t\tRule "<<i+1<<": ";
@@ -34,16 +34,14 @@ void outState(vector <int> s)   //Print the Current State
 int main()
 {
 	printRules(); // Print out the rules for rule 90 ceulluar Automata:
-	cout << "\n\t\t\tSERPINSKI TRIANGLE\n";
+	cout << "\n\t\t\tSERPINSKI TRIANGLE\n\n";
     
 	// Initialize starting state to serpinski traingle
-    vector <int> serpinski(LENGTH),updateState(LENGTH);
+        vector <int> serpinski(LENGTH),updateState(LENGTH);
 	serpinski[(LENGTH)/2 -1] = 1;
 	
 	// Print Serpinski Traingle Initial String
-	cout << "\n";
 	outState(serpinski);
-	
 	// Loop to generate/update the State and Update State arrays then print them
 	for (int i = 0; i < n; i++)
 	{
@@ -58,14 +56,14 @@ int main()
 			int f2 = serpinski[j];
 			int f3 = serpinski[j + 1];
 
-			vector <int> curPattern;
-			curPattern.push_back(f1);
-			curPattern.push_back(f2);
-			curPattern.push_back(f3);
+			vector <int> current;
+			current.push_back(f1);
+			current.push_back(f2);
+			current.push_back(f3);
 
 			// XOR the current state's neighbours to set the cell's value in Update State
-			updateState[j]=curPattern[0]^curPattern[2]; 
-        }
+			updateState[j]=current[0]^current[2]; 
+                }
 		// Update the current state
 		serpinski.assign(updateState.begin(),updateState.end());
 		
