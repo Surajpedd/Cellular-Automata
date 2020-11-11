@@ -24,6 +24,10 @@ A cellular automaton is a model of a system of "cell" objects with following cha
 ## Examples
 
  ### 1. [Rule 90](https://github.com/Surajpedd/Cellular-Automata/blob/main/Rule90.cpp)
+ 
+Rule 90 is an elementary cellular automaton that consists of a one-dimensional array of cells, each of which can hold either a 0 or a 1 value. When the initial state has a single nonzero cell, this diagram has the appearance of the Sierpiński triangle.<br>
+In Rule 90, each cell is the <b>exclusive or(XOR)</b> of its two neighbors and since this is equivalent to modulo-2 addition, this generates the modulo-2 version of Pascal's triangle.<br>
+The diagram has a <b>1</b> wherever Pascal's triangle has an odd number, and a <b>0</b> wherever Pascal's triangle has an even number.
 
 ![Rule 90](https://github.com/Surajpedd/Cellular-Automata/blob/main/Img/Rule90.jpg)
 
