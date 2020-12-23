@@ -44,7 +44,6 @@ void determineState(bool gridOne[gridSize+1][gridSize+1])
 int main()
 {
     bool gridOne[gridSize+1][gridSize+1]={};                             //gridSize=25 (any value can be chosen)
-    char ch='Y';
     int x,y,nc;
     cin >> nc;
     for(int i=0;i<nc;i++)
@@ -54,6 +53,7 @@ int main()
 	gridOne[x][y] = true;
 	printGrid(gridOne);
     }
+    char ch='Y';
     for(nc=1;ch=='Y';nc++)                                              //for loop to generate next state until break
     {
       	system("clear");
