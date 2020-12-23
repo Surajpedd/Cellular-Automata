@@ -37,7 +37,7 @@ Algorithm determineState(bool gridOne[gridSize+1][gridSize+1])
             alive=check(gridTwo,a,b)
             if(alive < 2 || alive > 3 && gridTwo[a][b]==true)           //if less than 2 neighbours alive or more than 3 then cell dies
                 gridOne[a][b] = false
-            else if(alive == 3 && gridTwo[a][b]==false)                 //if three adjacent cells are alive then cell is birthed
+            else if(alive == 3 && gridTwo[a][b]==false)                 //if three adjacent cells are alive then cell is born
                 gridOne[a][b] = true
         }
 }
