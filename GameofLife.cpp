@@ -41,26 +41,24 @@ void determineState(bool gridOne[gridSize+1][gridSize+1])
                 gridOne[a][b] = true;
         }
 }
-int main()
+Algorithm main()
 {
-    bool gridOne[gridSize+1][gridSize+1]={};                             //gridSize=25 (any value can be chosen)
-    int x,y,nc;
-    cin >> nc;
+    bool gridOne[gridSize+1][gridSize+1]={}                             //gridSize=25 (any value can be chosen)
+    int x,y,nc
+    Read nc
     for(int i=0;i<nc;i++)
     {
-	cout <<"Enter the coordinates of cell " << i+1 << " : "<<endl;
-	cin>>x>>y;
-	gridOne[x][y] = true;
-	printGrid(gridOne);
+	Read x and y coordinates 
+	gridOne[x][y] = true
+	printGrid(gridOne)
     }
-    char ch='Y';
+    Set ch='Y'
     for(nc=1;ch=='Y';nc++)                                              //for loop to generate next state until break
     {
-      	system("clear");
-        cout<<"State "<<nc<<endl;
-        printGrid(gridOne);
-        cout<<"Continue? [Y/N]";
-        cin>>ch;
+      	system("clear")
+        printGrid(gridOne)
+        Print "Continue? [Y/N]"
+        Read ch
         determineState(gridOne);
     }
 }
