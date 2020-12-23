@@ -35,7 +35,7 @@ void determineState(bool gridOne[gridSize+1][gridSize+1])
         for(int b = 1; b < gridSize; b++)
         {
             alive=check(gridTwo,a,b);
-            if(alive < 2 || alive > 3 && gridTwo[a][b]==true)           //if less than 2 neighbours alive and more than 3 then cell dies
+            if(alive < 2 || alive > 3 && gridTwo[a][b]==true)           //if less than 2 neighbours alive or more than 3 then cell dies
                 gridOne[a][b] = false;
             else if(alive == 3 && gridTwo[a][b]==false)                 //if three adjacent cells are alive then cell is birthed
                 gridOne[a][b] = true;
