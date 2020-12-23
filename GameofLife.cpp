@@ -24,7 +24,7 @@ Algorithm check(bool gridTwo[gridSize+1][gridSize+1],int a,int b)               
         for(int j = -1; j < 2; j++)
             if(!(i == 0 && j == 0) && gridTwo[a+i][b+j]==true)                  //checking all adjacent cells are alive 
 	     	    alive=alive+1
-    return alive;
+    return alive
 }
 Algorithm determineState(bool gridOne[gridSize+1][gridSize+1])
 {
